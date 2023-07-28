@@ -82,7 +82,7 @@ export default class Admin {
       sendEmail(
         emailConfig({
           email: data.email,
-          subject: 'Brogrammers email verification',
+          subject: 'Rwamagana Mall email verification',
           content: verificationEmail,
         })
       );

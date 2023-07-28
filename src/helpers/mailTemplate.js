@@ -10,14 +10,14 @@ export const verifyEmailTemplate = (userToken) => {
       <h1 style="color: #004d99; text-align: center;">Welcome to Brogrammers e-commerce!</h1>
       <p style="color: #000; font-size: 16px;">Please click below to activate your account:</p>
       <a href="${process.env.VERIFY_URL}/${userToken}" style="display: block; text-align: center; padding: 10px 20px; background-color: #004d99; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px;">Verify Your Email</a>
-      <p style="color: #000; font-size: 14px;">Thank you for choosing Brogrammers e-commerce.</p>
+      <p style="color: #000; font-size: 14px;">Thank you for choosing Rwamagana mall e-commerce.</p>
     </div>
     `;
 };
 export const verifyEmailSubscriberTemplate = (userToken, token) => {
   return `
   <div style="background-color: #f2f2f2; padding: 20px;">
-    <h1 style="color: #004d99; text-align: center;">Thank you for subscribing to Brogrammers e-commerce newsletter!</h1>
+    <h1 style="color: #004d99; text-align: center;">Thank you for subscribing to Rwamagana Mall e-commerce newsletter!</h1>
     <p style="color: #000; font-size: 16px;">Please click below to confirm your subscription:</p>
    <a href="${process.env.SWAGGER_SERVER}/subscriber/verify/${userToken}?r=${token}" style="display: block; text-align: center; padding: 10px 20px; background-color: #004d99; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px;">Confirm Subscription</a>
    <p style="color: #000; font-size: 14px;">You will now receive our latest updates and promotions.</p>
@@ -27,7 +27,7 @@ export const verifyEmailSubscriberTemplate = (userToken, token) => {
 export const thankYouSubscriberTemplate = (username, subscriberId) => {
   return `
     <div style="background-color: #f2f2f2; padding: 20px;">
-      <h1 style="color: #004d99; text-align: center;">Thank you ${username} for subscribing to Brogrammers e-commerce newsletter!</h1>
+      <h1 style="color: #004d99; text-align: center;">Thank you ${username} for subscribing to Rwamagana Mall e-commerce newsletter!</h1>
       <p style="color: #000; font-size: 16px;">You will now receive our latest updates and promotions.</p>
       <p style="color: #000; font-size: 14px;">If you would like to unsubscribe from our newsletter, please click <a href="${process.env.UNSUBSCRIBE_URL}/${subscriberId}" style="color: #004d99; text-decoration: underline;">here</a>.</p>
     </div>
@@ -57,7 +57,7 @@ export const passwordResetEmailTemplate = (resetToken) => {
       <h1 style="color: #004d99; text-align: center;">Brogrammers e-commerce!</h1>
       <p style="color: #000; font-size: 16px;">Please click below to reset you password</p>
       <a target="_blank" href="${process.env.PASSWORD_RESET_URL}/${resetToken}" style="display: block; text-align: center; font-size:18px; padding: 10px 20px; background-color: #004d99; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px;"> Click to reset your password</a>
-      <p style="color: #000; font-size: 14px;">Thank you for choosing Brogrammers e-commerce.</p>
+      <p style="color: #000; font-size: 14px;">Thank you for choosing Rwamgana mall e-commerce.</p>
     </div>
     `;
 };
@@ -67,7 +67,7 @@ export const mfaEmailTemplate = (mfa_code) => {
       <h1 style="color: #004d99; text-align: center;">Please use the following code to login.</h1>
       <p style="color: #000; font-size: 16px;">CODE: ${mfa_code}</p>
       
-      <p style="color: #000; font-size: 14px;">Thank you for choosing Brogrammers e-commerce.</p>
+      <p style="color: #000; font-size: 14px;">Thank you for choosing Rwamagana mall e-commerce.</p>
     </div>
   `;
 };
@@ -78,7 +78,7 @@ export const disableEmailTemplate = (username, disabledReason) => {
       <p style="color: #000; font-size: 16px;">Your account has been disabled due to the following reason(s):<br/><br/>
       ${disabledReason}<br/><br/>Please contact the support team if you have any questions.<br/><br/><br/>Best regards, <br/><br/>The support team,</p>
 
-      <p style="color: #000; font-size: 14px;">Thank you for choosing Brogrammers e-commerce.</p>
+      <p style="color: #000; font-size: 14px;">Thank you for choosing Rwamagana mall ammers e-commerce.</p>
     </div>
   `;
 };

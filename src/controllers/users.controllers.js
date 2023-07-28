@@ -85,7 +85,7 @@ export default class Users {
       sendEmail(
         emailConfig({
           email: data.email,
-          subject: 'Brogrammers email verification',
+          subject: 'Rwamagana Mall email verification',
           content: verificationEmail,
         })
       );
